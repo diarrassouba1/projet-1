@@ -10,12 +10,14 @@
 <body>
     <div class="container">
         <nav class="entete">
-           <div class="logo" ><span>C</span>odeur<b>.</b></div>
+           <div class="logo" >
+            <img src="image/logo.jpeg" alt="Logo">
+            <span>C</span>odeur<b>.</b></div>
            <div class="menu">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Compétences</a></li>
-            <li><a href="#">Parcours</a></li>
+            <li><a href="https://www.google.com" target="_blank">Accueil</a></li>
+            <li><a href="https://www.about.me/" target="_blank">A propos</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank">Compétences</a></li>
+            <li><a href="https://www.example.com" target="_blank">Parcours</a></li>
            </div>
            <div class="reseaux">
                <a href="http:// www.twitter.fr"><i class=" fa fa-twitter"></i></a>
@@ -41,8 +43,10 @@
                      <img src="image/images.jpeg">
                      </div>
                      <div class="btn2">
-                        <button onclick="showMessage()"> Télécharger mon CV</button>
-                        <button>Pret</button>
+                        <a href="image/CV .pdf" download="CV.pdf" onclick="showMessage()" style="text-decoration: none;">
+                            <button type="button">Télécharger mon CV</button>
+                          </a>
+                          <button type="button">Merci et A bientôt</button>
                      </div>
 
             </div>
@@ -70,6 +74,9 @@
         backSpeed: 100,
         typeSpeed:50,
       });
+      function showMessage() {
+    alert(" Téléchargement en cours !");
+  }
     </script>
 </body>
 </html>
