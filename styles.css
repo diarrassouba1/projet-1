@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wwght@400;900&display=swap');
 :root{
-    --my-color-gris: #f3f5f8;
+    --my-color-gris:#f3f5f8;
     --my-color-gris-fonce:#3d535f;
     --my-color-jaune: #ffe800;
 }
@@ -10,8 +10,14 @@ body{
    
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding-top: 70px;
 }
+
+    body {
+      font-size: 14px;
+      padding: 5px;
+    }
+  
 *{
     
 margin-bottom:5px;
@@ -25,11 +31,22 @@ font-family: 'poppins,sans-serif';
 
 .container{
     
-    
- 
     margin: 0;
     background-color: var(--my-color-gris);
 }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Couleur de fond optionnelle */
+    z-index: 100; /* Assure que le header reste au-dessus des autres éléments */
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optionnel : donne une ombre élégante */
+}
+
+
 /* décaler les termes*/
 .entete{
 display: flex;
@@ -107,6 +124,7 @@ margin: 25px 10px;
     z-index: 5px;
 }
 .textB{
+    margin-top: 150px;
     display: block;
     position:relative;
     font-size: 35px;
@@ -188,7 +206,16 @@ button:hover{
     
 }
 
+footer{
+    background-color: #3d535f;
+    width: 250%;
+    padding: 5px;
+    margin-left: -140px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px;
 
+
+}
 
 .cra img{
     position: relative;
@@ -213,7 +240,7 @@ button:hover{
 }
 
 #textDefil{
-    font-size: 40px;
+    font-size: 30px;
     color: var(--my-color-jaune);
     
 }
