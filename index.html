@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJET 1</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="image/developpeur.png" type="image/png" width="10px">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <nav class="entete">
+           <div class="logo" >
+            <img src="image/logo.jpeg" alt="Logo">
+            <span>C</span>odeur<b>.</b></div>
+           <div class="menu">
+            
+            <li><a href="#Accueil" target="_blank">Accueil</a></li>
+            <section>
+            <li><a href="#A propos de moi" target="_blank">A propos de moi</a></li>
+        </section>
+            <li><a href="# Compétence " target="_blank">Compétences</a></li>
+            <section>
+            <li><a href="#Ma passion" target="_blank">Ma passion</a></li>
+        </section>
+           </div>
+           <div class="reseaux">
+               <a href="http:// www.twitter.fr"><i class=" fa fa-twitter"></i></a>
+               <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+                <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+           </div>
+        </header> 
+        </nav>
+        
+        <div class="corps">
+            <div class=".Cgauche">
+                <span class="textB">Salut</span>
+                <h2>Je suis DIARRASSOUBA Maimouna </h2>
+                 <h1><span id="textDefil"></span></h1>
+                <p>
+                    Ayant obtenu un BTS en Informatique Developpeur D'Application (IDA)à 
+                    l'Intitut Superieur de Gestion  Commerciale (ISGC)Micromedia de Daloa,
+                    Après le stage de validation de mon diplôme ,je m'auto-forme grace au 
+                    differentes plate-forme telles que Fronten-Mentor et freeCodeCamp.
+                    Je suis en reconversion professionnelle afin de devenir développeuse frontend, 
+                    spécialisée dans la création 
+                    de sites interactifs. Mon objectif est de m'intégrer dans le monde professionnel
+                     en tant qu'experte en développement web.</p>
+                     <div class="cra">
+                     <img src="image/images.jpeg">
+                     </div>
+                
+                     <footer>
+                     <div class="btn2">
+                        <a href="image/CV .pdf" download="CV.pdf" onclick="showMessage()" style="text-decoration: none;">
+                            <button type="button">Télécharger mon CV</button>
+                          </a>
+                          <a href="image/MERCI.jpeg"><button type="button">Merci et A bientôt</button></a>
+                     </div>
+
+            </div>
+        </header>
+            <div class="Cdroite">
+                <div class="groupImg">
+                    <img src="image/developpeur.png" id="idspl">
+                    
+                </div>
+
+            </div>
+    
+        </div>
+
+
+    </div>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#textDefil', {
+        strings: ["Etudiante.","Développeuse front end."],
+        loop:1,
+        startDelay: 100,
+        backSpeed: 100,
+        typeSpeed:50,
+      });
+      function showMessage() {
+    alert(" Téléchargement en cours !");
+  }
+    </script>
+</body>
+</html>
+
